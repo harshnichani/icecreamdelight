@@ -1,0 +1,180 @@
+/* Reset */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Home Page */
+
+/* Background */
+.home {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("../img/Ice-home.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 86vh;
+}
+
+.text {
+	font-family: "Courgette", cursive;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	color: white;
+}
+
+.text .btn {
+	text-shadow: 0 0 0;
+	font-size: 1rem;
+}
+
+.navbar {
+	background: linear-gradient(to right, #434343, #000000);
+	font-family: "Roboto", sans-serif;
+	color: white;
+}
+
+li strong {
+	font-family: "Sansita Swashed", cursive;
+	font-size: 1.2rem;
+}
+
+/* About Page */
+
+/* Background */
+.about {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("../img/Ice-about.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	width: 100%;
+	height: 75vh;
+}
+
+/* Section */
+
+.section-light {
+	font-family: "Courgette", cursive;
+	padding: 1.3rem;
+	text-align: center;
+	line-height: 1.5rem;
+}
+
+.section-light h1,
+.section-light p {
+	padding: 0.8rem;
+}
+
+.section-dark h4 {
+	font-family: "Courgette", cursive;
+}
+
+/* 404 Page */
+
+/* Background */
+.error {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/404.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	width: 100%;
+	height: 86vh;
+}
+
+/* Flavours Page */
+.col-sm-4 {
+	font-family: "Courgette", cursive;
+	text-align: center;
+}
+
+/* Login Page & Sign Up Page */
+.form-card {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("../img/loginbg.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 86vh;
+}
+
+/* Footer */
+
+.socket p {
+	font-family: "Roboto", sans-serif;
+	color: white;
+	margin: 0;
+}
+
+.socket {
+	background: linear-gradient(to right, #434343, #000000);
+	color: white;
+}
+
+/* ==== Media Queries ==== */
+
+/* Devices under 1199px (xl) */
+@media (max-width: 1199.98px) {
+	.container-fluid {
+		min-height: 92vh;
+	}
+
+	.form-card {
+		height: 92vh;
+	}
+}
+
+@media (max-width: 991.98px) {
+	#navbarNav {
+		flex-direction: column;
+		align-items: start;
+	}
+
+	.credentails {
+		flex-direction: row;
+		margin-top: 0.7rem;
+		margin-bottom: 0.7rem;
+	}
+
+	.credentails li {
+		padding: 0;
+	}
+
+	.credentails li a {
+		padding: 0.4rem;
+	}
+}
+
+/* Devices under 768px (md) */
+@media (max-width: 767.98px) {
+	.container-fluid {
+		height: 86.5vh;
+	}
+
+	.text h1 {
+		font-size: 2.3rem;
+	}
+
+	.text h4 {
+		font-size: 1.3rem;
+	}
+
+	.section-dark h1 {
+		font-size: 1.7rem;
+	}
+
+	.section-dark h4 {
+		font-size: 1.2rem;
+	}
+
+	.socket p {
+		font-size: 0.8rem;
+	}
+}
